@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/graph_to_month"
+        android:orderInCategory="100"
+        android:title="แสดงเป็นรายเดือน"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/graph_to_year2"
+        android:orderInCategory="100"
+        android:title="แสดงเป็นรายปี"
+        app:showAsAction="never"/>
+
+</menu>

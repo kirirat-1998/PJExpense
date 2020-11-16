@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GraphIncome">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_graph_income"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_graph_income2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorOrange"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="#ffffff"
+                    android:text="ตั้งแต่  " />
+
+                <Spinner
+                    android:id="@+id/spinner_month_start"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:popupBackground="@drawable/shape_edit" />
+
+                <Spinner
+                    android:id="@+id/spinner_year_start"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:popupBackground="@drawable/shape_edit" />
+            </androidx.appcompat.widget.Toolbar>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_graph_income22"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorOrange"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="#ffffff"
+                    android:text="     ถึง  " />
+
+                <Spinner
+                    android:id="@+id/spinner_month_end"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:popupBackground="@drawable/shape_edit" />
+
+                <Spinner
+                    android:id="@+id/spinner_year_end"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:popupBackground="@drawable/shape_edit" />
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <include layout="@layout/content_income"/>
+    </LinearLayout>
+
+
+</ScrollView>

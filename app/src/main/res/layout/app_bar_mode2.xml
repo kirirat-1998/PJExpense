@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mode2">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_mode2On"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorOrange"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_mode2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorOrange"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="         "/>
+
+            <Spinner
+                android:id="@+id/spinner_month"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:popupBackground="@drawable/shape_edit"
+                android:layout_marginEnd="10dp" />
+            <Spinner
+                android:id="@+id/spinner_year"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:popupBackground="@drawable/shape_edit"
+                android:layout_marginEnd="10dp"/>
+            <TextView
+                android:id="@+id/yearMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello World!"
+                android:textSize="45px"
+                android:textColor="@color/primary"
+                android:background="@drawable/shape_month_year"
+                android:layout_gravity="center"
+                />
+        </androidx.appcompat.widget.Toolbar>
+        <CheckBox
+            android:id="@+id/cbDateRange"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            />
+        <CheckBox
+            android:id="@+id/cbCustomTitle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            />
+        <CheckBox
+            android:id="@+id/cbShortMonth"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            />
+
+
+        <GridLayout
+            android:id="@+id/gitb"
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:layout_below="@+id/appBar"
+            android:layout_alignStart="@+id/appBar"
+            android:layout_alignLeft="@+id/appBar"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/shape_edit"
+            android:columnCount="3"
+            android:rowCount="6">
+
+            <TextView
+                android:layout_width="250dp"
+                android:text="  รายรับ"
+                android:textStyle="bold"
+                android:textColor="#22A50D"/>
+
+            <TextView
+                android:id="@+id/text_income"
+                android:layout_gravity="right"
+                android:textColor="#22A50D"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_gravity="right"
+                android:text="บาท  "
+                android:textColor="#4D4545"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="250dp"
+                android:text="  รายจ่าย"
+                android:textColor="#C91212"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_expense"
+                android:layout_gravity="right"
+                android:textColor="#C91212"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_gravity="right"
+                android:text="บาท  "
+                android:textColor="#4D4545"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="250dp"
+                android:text="  คงเหลือ"
+                android:textColor="#4D4545"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_balance"
+                android:layout_gravity="right"
+                android:textColor="#4D4545"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_gravity="right"
+                android:text="บาท  "
+                android:textColor="#4D4545"
+                android:textStyle="bold" />
+        </GridLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_mode2" />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

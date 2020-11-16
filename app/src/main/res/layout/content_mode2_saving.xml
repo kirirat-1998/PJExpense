@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_mode2saving"
+    tools:context=".Mode2Saving">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:layout_behavior="@string/title_activity_main2"
+
+        >
+
+        <GridLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorOrange"
+            android:columnCount="4">
+
+<!--            <TextView-->
+<!--                android:id="@+id/nb_tasks"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:gravity="center"-->
+<!--                android:text="nb Tasks"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textColor="#FFFFFF"-->
+<!--                android:textSize="18dp"-->
+<!--                android:textStyle="bold" />-->
+
+            <CheckBox
+                android:id="@+id/switch_done"
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="150px"
+                android:layout_column="0"
+                android:textColor="@color/greenn"
+                android:buttonTint="@color/greenn"
+                android:text="สำเร็จ" />
+
+            <CheckBox
+                android:id="@+id/switch_todo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="150px"
+                android:layout_column="2"
+                android:textColor="@color/red_secondary"
+                android:buttonTint="@color/red_secondary"
+                android:text="ยังไม่สำเร็จ" />
+
+        </GridLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/top">
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+<!--            <ImageView-->
+<!--                android:id="@+id/add_btn"-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:onClick="add"-->
+<!--                android:src="@drawable/plus" />-->
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

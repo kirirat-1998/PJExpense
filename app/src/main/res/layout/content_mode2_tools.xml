@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_mode2tools">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="50dp"
+    android:layout_centerHorizontal="true">
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:text="ข้อมูลส่วนตัว"
+        android:textColor="#000000"
+        android:textSize="20dp"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="ชื่อ"
+    android:layout_marginTop="10dp"
+    android:textColor="#000000"/>
+    <EditText
+        android:id="@+id/editF_Name"
+        android:layout_width="300dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="15dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="นามสกุล"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/Last_Name"
+        android:layout_width="300dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="อีเมล"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="300dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/save_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="บันทึกข้อมูลส่วนตัว"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="185dp"
+        android:layout_height="31dp"
+        android:text="ส่งออกข้อมูล"
+        android:textColor="#000000"
+        android:layout_marginTop="45dp"
+        android:textSize="20dp" />
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Export To Excel"
+        android:textSize="15dp"
+        android:onClick="exportToExcel"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
+
+
+</RelativeLayout>

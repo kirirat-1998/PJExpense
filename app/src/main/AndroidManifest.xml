@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pjexpense">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_01"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_01_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".GraphMonthYear"
+            android:label="@string/title_activity_mode2_trend" />
+        <activity
+            android:name=".TestGraphYear222"
+            android:label="@string/title_activity_mode2_trend" />
+        <activity android:name=".TestGraphYear" />
+        <activity android:name=".test02" />
+        <activity android:name=".testtest" />
+        <activity android:name=".SqliteToExcel" />
+        <activity android:name=".GraphCompareIncome" />
+        <activity
+            android:name=".GraphIncome"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".InputIncomeMode1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".InputExpenseMode1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".InputExpenseMode2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".InputIncomeMode2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Mode2Help"
+            android:label="@string/title_activity_mode2_help"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Mode2Tools"
+            android:label="@string/title_activity_mode2_tools"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Mode2Saving"
+            android:label="@string/title_activity_mode2_saving"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Mode2Trend"
+            android:label="@string/title_activity_mode2_trend"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Mode2Category"
+            android:label="@string/title_activity_mode2_category"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Mode2Account"
+            android:label="@string/title_activity_mode2_account"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddItem"
+            android:label="@string/title_activity_mode2_saving"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EditItem"
+            android:label="@string/title_activity_mode2_saving"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Mode2"
+            android:label="@string/title_activity_mode2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EasyMode"
+            android:label="@string/EasyMode"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".BeforeMainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.pjexpense.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

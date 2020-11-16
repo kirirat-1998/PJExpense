@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mode2">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_trend2"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/test_toolbar_graph_income2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorOrange"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="#ffffff"
+                android:text="ตั้งแต่  "
+                android:id="@+id/test_start"/>
+
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/test_date_start"
+                android:text="มิถุนายน 2563"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textColor="@color/primary"
+                android:background="@drawable/shape_month_year"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="#ffffff"
+                android:id="@+id/test_to"
+                android:text="     ถึง  " />
+
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/test_date_to"
+                android:text="มิถุนายน 2563"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textColor="@color/primary"
+                android:background="@drawable/shape_month_year"/>
+            <CheckBox
+                android:id="@+id/cbDateRange"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                />
+            <CheckBox
+                android:id="@+id/cbCustomTitle"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                />
+            <CheckBox
+                android:id="@+id/cbShortMonth"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                />
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_mode2_trend"/>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
